@@ -10,18 +10,21 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Nook',
   tagline: 'The parking lot you deserve',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://nook-ua.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Nook_UA', // Usually your GitHub org/user name.
+  projectName: 'Nook-UA', // Usually your repo name.
+  deploymentBranch: 'main', // The branch your GitHub pages site is deployed from.
+
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
