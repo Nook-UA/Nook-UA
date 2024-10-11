@@ -77,9 +77,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Nook',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Nook Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -87,11 +87,10 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Nook-UA',
             label: 'GitHub',
             position: 'right',
           },
@@ -104,25 +103,21 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Documentation',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Useful Links',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'ES Course Elearning',
+                href: 'https://elearning.ua.pt/course/view.php?id=40316',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Group Assignment Document',
+                href: 'https://elearning.ua.pt/pluginfile.php/5571390/mod_resource/content/1/ES_2024_GroupProjectProposal_v0.1.pdf',
               },
             ],
           },
@@ -130,17 +125,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Nook-UA',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Nook, UA. All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,
