@@ -109,4 +109,4 @@ SET park:{park_id}:availability {available_spots} EX {expiration_time_in_seconds
 
 ## Architecture Diagram
 
-![Diagram](../static/img/architecture-diagram.png)
+![Diagram](/img/architecture-diagram.png)
