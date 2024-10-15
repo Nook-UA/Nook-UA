@@ -1,5 +1,7 @@
 # Nook: System Architecture
 
+## Overview
+
 ### 1. **Webapp (and Mobile App)**
 
 - **Purposes**:
@@ -9,7 +11,7 @@
 - **Tech Stack**:
   - Web: Next.js
   - Mobile: Android
-- **Communication**: Both apps will communicate with the API for data through https.
+- **Communication**: Both apps will communicate with the API for data through http.
 
 ### 2. **API / Data Handler**
 
@@ -39,7 +41,7 @@
 
 - **Purpose**: Store data such as:
   - Availability data from the video processing module.
-  - User information, park locations, and (historical availability trends, MAYBE?).
+  - User information, park locations, and historical availability trends.
 - **Database Choices**:
   - **SQL Database**: Usage of `PostgreSQL` for relational data like user data, park locations, etc.
   - **NoSQL Database**: For fast, flexible access to availability data we considered `Redis` for caching availability info.
@@ -63,7 +65,25 @@
 
 ## Stored Data:
 
+#### Client
+
+ - The `Client` is the entity that owns parking lots. They can have multiple parking lots.
+
+```sql
+CREATE TABLE Clients (
+  ID          UINT            PRIMARY KEY,
+  Name        VARCHAR(255),
+  Phone       VARCHAR(255),
+  Email        VARCHAR(255),
+  Picture     MEDIUMBLOB
+);
+```
+
+
+
 #### Park
+
+- The `Parks` correspond to a phisical location containing a group of parking spots, both available and used.
 
 ```sql
 CREATE TABLE Parks (
@@ -71,11 +91,15 @@ CREATE TABLE Parks (
   Name        VARCHAR(255),
   Picture     MEDIUMBLOB,
   Location    VARCHAR(255),
-  TotalSpots  INT
+  TotalSpots  INT,
+  OwnerID     UINT,
+  FOREIGN KEY (OwnerID) REFERENCES Costumers(ID)
 );
 ```
 
 #### Costumers
+
+- The `Costumers` are the users of the platform. They will be able to consult the state for parks in search of open spots. They can also have multiple favorite parks.
 
 ```sql
 CREATE TABLE Costumers (
