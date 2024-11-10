@@ -1,8 +1,15 @@
 
 ## Scheduale
 
-- <ins>__Start__</ins>: 2024/10/14
-- <ins>__End__</ins>: 2024/10/28
+| Start | End |
+| :--: | :--: |
+| 2024/10/104 | 2024/10/28 |
+
+## Roles
+
+| Scrum Master | Product Owner | Developers |
+| :--: | :--: | :--: |
+| Daniel Madureira | Tomás Victal | João Andrade <br /> José Gameiro <br /> Rafael Ferreira |
 
 ## Goal
 
@@ -25,7 +32,18 @@
 - Created some unit tests for the user story 4
 - Created a action in the rest api repository
 
+## Review
+
+| Completed | Quantity |
+| :--: | :--: |
+| Tasks | 5 |
+| Story Points | 16 |
+
 ## Retrospective
 
 The user stories for authentication where tested locally, because it didn't exist time to develop unit and functional tests. 
 There were some problems with the execution of the unit tests for the add a new park feauture in the REST API were the database configured for the tests was not done correctly, it was supposed to be a SQLite, but for some reason, when executing the tests for the repositories, with would try to connect to a PostgreSQL database. The action for CI/CD pipeline was created with success however because of the database configuration problem, this action would never run with success. It wasn't possible to configure some Terraform scripts do to lack of time, and the architecture for the deployment in AWS was also not possible to complete.
+
+## Burndown chart
+
+![Sprint 2 Burndown chart](/img/Sprint2_burndown.png)
