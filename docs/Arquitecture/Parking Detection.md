@@ -1,7 +1,3 @@
-Here’s a markdown documentation template for your **Parking Detection Microservice**. It provides an overview of the service, describes the available endpoints, and gives usage examples for users of the service.
-
----
-
 # **Parking Detection Microservice Documentation**
 
 ## **Overview**
