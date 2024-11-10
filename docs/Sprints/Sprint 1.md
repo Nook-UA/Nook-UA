@@ -1,8 +1,8 @@
 
 ## Scheduale
 
-- <ins>__Sprint Start__</ins>: 2024/10/10
-- <ins>__Sprint End__</ins>: 2024/10/14
+- <ins>__Start__</ins>: 2024/10/10
+- <ins>__End__</ins>: 2024/10/14
 
 ## Goal
 
@@ -18,6 +18,7 @@
 - Created a repository for the mobile application with a Android project
 - Set up a repository for the Documentation website using Docosaurus
 - Set up jira project and workflow
+- System architecture defined with tecnologies included
 - Design initial mockups for the web and mobile applications
 - Initial development of fake endpoints in the rest api for the login and add a new park
 - Developed static pages for the web and mobile applications according to the mockups made
