@@ -1,4 +1,4 @@
-# Nook: Authentication
+# Authentication
 
 ## Overview
 The Nook authentication uses two methods, one for the client and other for the user.
