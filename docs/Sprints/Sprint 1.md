@@ -1,5 +1,5 @@
 
-## Scheduale
+## Schedule
 
 | Start | End |
 | :--: | :--: |
