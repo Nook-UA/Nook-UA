@@ -1,4 +1,4 @@
-# **Parking Detection Microservice Documentation**
+# Parking Detection Microservice Documentation
 
 ## **Overview**
 
