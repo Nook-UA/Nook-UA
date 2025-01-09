@@ -1,9 +1,9 @@
 {
-    "label": "Agile",
-    "position": 5,
-    "link": {
-      "type": "generated-index",
-      "description": "This section contains the sprints. Each contains a description of its goal, user stories implemented, story points delivered and a sprint retrospective"
-    }
+  "label": "Agile",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "This section contains the our agile process. Here you can find information about our sprint planning, sprint reviews, and sprint retrospectives."
   }
-  
+}
+
