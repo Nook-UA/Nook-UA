@@ -5,6 +5,7 @@ For the web app we decided to implement the following main features:
 - See a client's parking lots
 - Add a new parking lot
 - See a parking lot details
+- Edit parking spots in a parking lot
 
 ## 1. Authentication with AWS Cognito
 
@@ -33,3 +34,9 @@ When the client clicks on the button to add a new parking lot, the page shown in
 ![Park Details](/img/web_app/park_details.png)
 
 When a client clicks on one of the parking lot cards in the my parks page, the client will be redirected to the page shown in the image above. This page presents the parking lot's details which include the parking lot's name, image, occupancy status, a map with the parking lot's location and an image with the most recent image of the feed from the cameras. The occupancy status includes the available, occupied and total parking spots. The client can also see the parking spots in the parking lot by clicking on the button "See Parking Spots". There's also present a button to edit parking spots in which a user gets redirect to a new page and define the parking spots present in the images captured by the feed so that the algorithm that detects if a parking spot is available or not can work properly. 
+
+## 5. Edit parking spots in a parking lot
+
+![Edit Parking spots](/img/web_app/edit_parking_spots.png)
+
+If a client wants to edit the parking spots in a parking lot, this page is presented. Where the last image captured by the camera feed is provided and little red dots are present in that image representing the vehicles in the image. To define a parking spot the client needs to define a are that represents a parking spot by clicking on the image 4 times to represent a parking spot. If the client does this, then the little points will form a parking spot and when submited now the parking detection microservice will be able to detect if a parking spot is available or not.
