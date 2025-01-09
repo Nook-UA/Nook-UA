@@ -94,6 +94,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            href: 'https://es-nook-group-5.atlassian.net/jira/software/projects/ESNOOK/boards/1/timeline',
+            label: 'Jira',
+            position: 'right',
+          }
         ],
       },
       footer: {
