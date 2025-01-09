@@ -78,6 +78,9 @@
   - **Tech Stack**:
     - **Redis**: For fast access to real-time data like parking spot availability.
 
+### 6. **S3 Bucket**
+  - **Purpose**: Store the images of the parking lots
+
 ## Flow Overview:
 
 1. **Video Feeds** from parks are ingested into the core processing.
